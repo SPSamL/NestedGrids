@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="7ff0ae11-6d27-482b-ae60-56d8d2e34364" solutionId="7ff0ae11-6d27-482b-ae60-56d8d2e34364" resetWebServer="false" name="Larko.SharePoint.NestedGrids" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="923d0420-ed56-43b2-9790-b5befa89a041" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="9639af47-dd04-4c11-a9b0-1e2df716a621" />
+    <projectItemReference itemId="71c5f97e-d417-4844-9738-d25bc4adea93" />
+  </projectItems>
+</package>

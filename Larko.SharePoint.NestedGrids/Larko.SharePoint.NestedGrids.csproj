@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{230B9724-FF5F-4949-9904-3DBAA88EDFAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Larko.SharePoint.NestedGrids</RootNamespace>
+    <AssemblyName>Larko.SharePoint.NestedGrids</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CONTROLTEMPLATES\Larko.SharePoint.NestedGrids\NewChildItemControl.ascx.cs">
+      <DependentUpon>NewChildItemControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\Larko.SharePoint.NestedGrids\NewChildItemControl.ascx.designer.cs">
+      <DependentUpon>NewChildItemControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Larko.SharePoint.NestedGrids\GridView.aspx.cs">
+      <DependentUpon>GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Larko.SharePoint.NestedGrids\GridView.aspx.designer.cs">
+      <DependentUpon>GridView.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lists\Departments\NewItemForm.aspx.cs">
+      <DependentUpon>NewItemForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lists\Departments\NewItemForm.aspx.designer.cs">
+      <DependentUpon>NewItemForm.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\toastr.less" />
+    <None Include="content\toastr.scss" />
+    <None Include="CONTROLTEMPLATES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{71c5f97e-d417-4844-9738-d25bc4adea93}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Larko.SharePoint.NestedGrids\Larko.SharePoint.NestedGrids.feature">
+      <FeatureId>{923d0420-ed56-43b2-9790-b5befa89a041}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9639af47-dd04-4c11-a9b0-1e2df716a621}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Departments\DepartmentsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{676d02cf-0079-487b-a455-a0a44da7e847}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Departments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ce82e5ce-27e7-4be0-897f-66cfcd156576}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Faculty\FacultyInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{898d55e6-3525-4705-8ee8-cc30a8d8b4ca}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Faculty\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d913b5d0-d252-4a1d-aafd-f8161e174756}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Majors\MajorInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{056e91ff-becc-4304-8293-c1d53d44f00f}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Majors\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c9f1819b-a697-460d-9d99-26c40073f358}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Schools\SchoolInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{247d55e0-ebd9-45a9-ba50-b809f1263150}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Schools\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6ea3d369-5604-4fb3-b344-a6887471371b}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Students\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4a09f652-f0be-44c4-8fc6-721dbf484f59}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Students\StudentInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0395650-2396-44fd-ba05-861e4abd40af}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{7ff0ae11-6d27-482b-ae60-56d8d2e34364}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\css\toastr.css" />
+    <Content Include="content\toastr.min.css" />
+    <Content Include="CONTROLTEMPLATES\Larko.SharePoint.NestedGrids\NewChildItemControl.ascx" />
+    <Content Include="Features\Larko.SharePoint.NestedGrids\Larko.SharePoint.NestedGrids.Template.xml">
+      <DependentUpon>Larko.SharePoint.NestedGrids.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\css\details_close.png" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\css\details_open.png" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\css\downarrow.png" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\css\NestedGrids.css" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\css\uparrow.png" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\GridView.aspx" />
+    <Content Include="Lists\Departments\NewItemForm.aspx" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\js\jquery-1.8.3.min.js" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\js\jquery.js" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\js\knockout-3.3.0.debug.js" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\js\knockout-3.3.0.js" />
+    <Content Include="Lists\Departments\DepartmentsInstance\Elements.xml" />
+    <Content Include="Lists\Departments\Elements.xml" />
+    <Content Include="Lists\Departments\Schema.xml" />
+    <Content Include="Lists\Faculty\Elements.xml" />
+    <Content Include="Lists\Faculty\FacultyInstance\Elements.xml" />
+    <Content Include="Lists\Faculty\Schema.xml" />
+    <Content Include="Lists\Majors\Elements.xml" />
+    <Content Include="Lists\Majors\MajorInstance\Elements.xml" />
+    <Content Include="Lists\Majors\Schema.xml" />
+    <Content Include="Lists\Schools\Elements.xml" />
+    <Content Include="Lists\Schools\Schema.xml" />
+    <Content Include="Lists\Schools\SchoolInstance\Elements.xml" />
+    <Content Include="Lists\Students\Elements.xml" />
+    <Content Include="Lists\Students\Schema.xml" />
+    <Content Include="Lists\Students\StudentInstance\Elements.xml" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\js\toastr.js" />
+    <Content Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\js\toastr.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\ts\BaseObjects.ts" />
+    <TypeScriptCompile Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\ts\Constants.ts" />
+    <TypeScriptCompile Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\ts\DataObjects.ts" />
+    <TypeScriptCompile Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\ts\DepartmentGridViewModel.ts" />
+    <TypeScriptCompile Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\ts\DepartmentViewModel.ts" />
+    <TypeScriptCompile Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\ts\MainViewModel.ts" />
+    <TypeScriptCompile Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\ts\Extensions.ts" />
+    <TypeScriptCompile Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\ts\SchoolViewModel.ts" />
+    <TypeScriptCompile Include="Layouts\Larko.SharePoint.NestedGrids\Scripts\ts\Utilities.ts" />
+    <TypeScriptCompile Include="TSDefs\toastr.d.ts" />
+    <TypeScriptCompile Include="TSDefs\NestedGrids.d.ts" />
+    <TypeScriptCompile Include="TSDefs\jquery.d.ts" />
+    <TypeScriptCompile Include="TSDefs\knockout.d.ts" />
+    <TypeScriptCompile Include="TSDefs\SharePoint.d.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir>$(ProjectDir)layouts\Larko.SharePoint.NestedGrids\Scripts\js</TypeScriptOutDir>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot>$(ProjectDir)layouts\Larko.SharePoint.NestedGrids\Scripts\ts</TypeScriptSourceRoot>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" />
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

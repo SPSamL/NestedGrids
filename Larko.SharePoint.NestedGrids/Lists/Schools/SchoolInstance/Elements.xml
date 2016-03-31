@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Schools" OnQuickLaunch="TRUE" TemplateType="11001" Url="Lists/Schools" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="ID">1</Field>
+          <Field Name="Title">UTSA</Field>
+          <Field Name="Location1">San Antonio, TX</Field>
+          <Field Name="Dean">Jim Smith</Field>
+          <Field Name="YearOpened">1970</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">2</Field>
+          <Field Name="Title">UMSL</Field>
+          <Field Name="Location1">St. Louis, MO</Field>
+          <Field Name="Dean">Sally Miller</Field>
+          <Field Name="YearOpened">1900</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">3</Field>
+          <Field Name="Title">Trinity University</Field>
+          <Field Name="Location1">San Antonio, TX</Field>
+          <Field Name="Dean">Father Abbot Dalebert Markwart</Field>
+          <Field Name="YearOpened">1099</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">4</Field>
+          <Field Name="Title">MIT</Field>
+          <Field Name="Location1">Cambridge, MA</Field>
+          <Field Name="Dean">David Backes</Field>
+          <Field Name="YearOpened">1840</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">5</Field>
+          <Field Name="Title">Princeton University</Field>
+          <Field Name="Location1">Princeton, NJ</Field>
+          <Field Name="Dean">Alex Steen</Field>
+          <Field Name="YearOpened">1099</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">6</Field>
+          <Field Name="Title">Harvard University</Field>
+          <Field Name="Location1">Cambridge, MA</Field>
+          <Field Name="Dean">Jori Lehtera</Field>
+          <Field Name="YearOpened">1900</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">7</Field>
+          <Field Name="Title">Columbia University</Field>
+          <Field Name="Location1">New York, NY</Field>
+          <Field Name="Dean">Jaden Schwartz</Field>
+          <Field Name="YearOpened">1800</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">8</Field>
+          <Field Name="Title">Duke University</Field>
+          <Field Name="Location1">Durham, NC</Field>
+          <Field Name="Dean">Yadier Molina</Field>
+          <Field Name="YearOpened">1715</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">9</Field>
+          <Field Name="Title">UCLA</Field>
+          <Field Name="Location1">Los Angeles, CA</Field>
+          <Field Name="Dean">Vladimir Tarasenko</Field>
+          <Field Name="YearOpened">1904</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">10</Field>
+          <Field Name="Title">USC</Field>
+          <Field Name="Location1">Los Angeles, CA</Field>
+          <Field Name="Dean">Matt Holliday</Field>
+          <Field Name="YearOpened">1945</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">11</Field>
+          <Field Name="Title">University of Virginia</Field>
+          <Field Name="Location1">Charlottesville, VA</Field>
+          <Field Name="Dean">Adam Wainwright</Field>
+          <Field Name="YearOpened">1809</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">12</Field>
+          <Field Name="Title">Carnegie Mellon University</Field>
+          <Field Name="Location1">Pittsburgh, PA</Field>
+          <Field Name="Dean">Michael Wacha</Field>
+          <Field Name="YearOpened">1776</Field>
+        </Row>
+        <Row>
+          <Field Name="ID">13</Field>
+          <Field Name="Title">Wake Forest University</Field>
+          <Field Name="Location1">Winston-Salem, NC</Field>
+          <Field Name="Dean">Matt Carpenter</Field>
+          <Field Name="YearOpened">1600</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
