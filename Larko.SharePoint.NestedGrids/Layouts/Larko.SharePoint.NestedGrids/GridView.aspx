@@ -218,8 +218,8 @@
                 <input type="text" data-bind="value: departmentVM.department().departmentHead.editValue, visible: departmentVM.isDepartmentEditing(departmentVM.department())" />
             </td>
         </tr>
-        <tr data-bind="if: departmentVM.department().isExpanded()">
-        </tr>
+        <%--<tr data-bind="if: departmentVM.department().isExpanded()">
+        </tr>--%>
     </script>
     <script type="text/html" id="departmentReadTemplate">
         <tr>
@@ -239,10 +239,10 @@
                 <label data-bind="text: departmentVM.department().departmentHead, visible: !departmentVM.isDepartmentEditing(departmentVM.department())" />
             </td>
         </tr>
-        <tr data-bind="if: departmentVM.department().isExpanded()">
-        </tr>
+        <%--<tr data-bind="if: departmentVM.department().isExpanded()">
+        </tr>--%>
     </script>
-    <script type="text/html" id="departmentExpansionTemplate">
+    <%--<script type="text/html" id="departmentExpansionTemplate">
         <td>
             <table data-bind="attr: { id: 'department' + departmentVM.department().id.toString() + 'DepartmentsTable' }, with: departmentVM.departments">
                 <thead>
@@ -277,5 +277,5 @@
                 <%--<tbody data-bind="template: { name: getDepartmentTemplate, foreach: filteredDepartments, as: 'departmentVM' }"></tbody>--%>
             </table>
         </td>
-    </script>
+    </script>--%>
 </asp:Content>

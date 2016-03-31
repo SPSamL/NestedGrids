@@ -13,9 +13,6 @@
         }
 
         //#region Filter and Search
-        //sortField = ko.observable<Sort>();
-        //searchText = ko.observable<string>();
-        //filters = ko.observableArray<Filter>();
 
         public filteredDepartments = ko.computed(() => {
             var currentVM = this;

@@ -25,7 +25,7 @@ var Larko;
                     });
                 };
                 SchoolViewModel.prototype.cancelSchool = function (school) {
-                    this.editTransaction.notifySubscribers(null, "commit");
+                    this.editTransaction.notifySubscribers(null, "rollback");
                     this.editingItem(null);
                 };
                 SchoolViewModel.prototype.editSchool = function (school) {

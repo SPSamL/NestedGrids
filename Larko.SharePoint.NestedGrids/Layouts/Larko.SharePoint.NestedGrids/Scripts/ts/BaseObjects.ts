@@ -1,6 +1,4 @@
-﻿
-
-module Larko.SharePoint.NestedGrids {
+﻿module Larko.SharePoint.NestedGrids {
     export class GridViewModel {
         //#region Class level variales and constructor
 

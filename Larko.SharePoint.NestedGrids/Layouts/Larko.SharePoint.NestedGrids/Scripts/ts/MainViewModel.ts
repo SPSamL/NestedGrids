@@ -2,7 +2,7 @@
 /// <reference path="../../../../tsdefs/sharepoint.d.ts" />
 
 module Larko.SharePoint.NestedGrids {
-    export class MainViewModel extends  GridViewModel {
+    export class MainViewModel extends GridViewModel {
         //#region Class level variables and constructor
         public schools: KnockoutObservableArray<SchoolViewModel> = ko.observableArray<SchoolViewModel>();
         private schoolListItems: SP.ListItemCollection;
@@ -14,9 +14,6 @@ module Larko.SharePoint.NestedGrids {
         }
 
         //#region Filter and Search
-        //sortField = ko.observable<Larko.SharePoint.NestedGrids.Sort>();
-        //searchText = ko.observable<string>();
-        //filters = ko.observableArray<Larko.SharePoint.NestedGrids.Filter>();
 
         filteredSchools = ko.computed(() => {
             var currentVM = this;

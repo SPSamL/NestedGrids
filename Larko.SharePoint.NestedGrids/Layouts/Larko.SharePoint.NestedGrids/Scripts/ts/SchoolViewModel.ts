@@ -34,7 +34,7 @@
         }
 
         cancelSchool(school: School) {
-            this.editTransaction.notifySubscribers(null, "commit");
+            this.editTransaction.notifySubscribers(null, "rollback");
             this.editingItem(null);
             
         }

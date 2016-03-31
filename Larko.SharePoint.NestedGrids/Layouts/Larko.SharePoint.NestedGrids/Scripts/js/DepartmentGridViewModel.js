@@ -18,9 +18,6 @@ var Larko;
                     this.parentSchool = ko.observable();
                     this.departments = ko.observableArray();
                     //#region Filter and Search
-                    //sortField = ko.observable<Sort>();
-                    //searchText = ko.observable<string>();
-                    //filters = ko.observableArray<Filter>();
                     this.filteredDepartments = ko.computed(function () {
                         var currentVM = _this;
                         currentVM.searchText($("#searchRequests").val());

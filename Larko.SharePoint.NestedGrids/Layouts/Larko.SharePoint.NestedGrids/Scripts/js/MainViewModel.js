@@ -19,9 +19,6 @@ var Larko;
                     //#region Class level variables and constructor
                     this.schools = ko.observableArray();
                     //#region Filter and Search
-                    //sortField = ko.observable<Larko.SharePoint.NestedGrids.Sort>();
-                    //searchText = ko.observable<string>();
-                    //filters = ko.observableArray<Larko.SharePoint.NestedGrids.Filter>();
                     this.filteredSchools = ko.computed(function () {
                         var currentVM = _this;
                         if (!NestedGrids.Utilities.isObjectNullorUndefined(currentVM.schools) && !NestedGrids.Utilities.isObjectNullorUndefined(currentVM.schools())) {
