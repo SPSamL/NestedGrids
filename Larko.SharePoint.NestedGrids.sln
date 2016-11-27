@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Larko.SharePoint.NestedGrids", "Larko.SharePoint.NestedGrids\Larko.SharePoint.NestedGrids.csproj", "{230B9724-FF5F-4949-9904-3DBAA88EDFAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Larko.SharePoint.NestedGrids.Client", "Larko.SharePoint.NestedGrids.Client\Larko.SharePoint.NestedGrids.Client.csproj", "{8E178228-6537-4C1B-8589-462EAD3C2E7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{230B9724-FF5F-4949-9904-3DBAA88EDFAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{230B9724-FF5F-4949-9904-3DBAA88EDFAE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{230B9724-FF5F-4949-9904-3DBAA88EDFAE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8E178228-6537-4C1B-8589-462EAD3C2E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E178228-6537-4C1B-8589-462EAD3C2E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E178228-6537-4C1B-8589-462EAD3C2E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E178228-6537-4C1B-8589-462EAD3C2E7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -110,7 +110,7 @@ var Larko;
                 }
                 Utilities.onQueryFailed = onQueryFailed;
                 function ShowDialog(listName, parentId, gridObject) {
-                    var url = "http://portal.contoso.com/sites/spssa/Lists/" + listName + "/NewForm.aspx?IsDlg=1";
+                    var url = "http://portal.contoso.local/sites/spsdc/Lists/" + listName + "/NewForm.aspx?IsDlg=1";
                     if (listName !== "School")
                         url += "&ParentID=" + parentId;
                     SP.UI.ModalDialog.showModalDialog({

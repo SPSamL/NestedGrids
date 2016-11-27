@@ -119,7 +119,7 @@
     }
 
     export function ShowDialog(listName: string, parentId: number, gridObject: GridViewModel) {
-        var url = "http://portal.contoso.com/sites/spssa/Lists/" + listName + "/NewForm.aspx?IsDlg=1";
+        var url = "http://portal.contoso.local/sites/spsdc/Lists/" + listName + "/NewForm.aspx?IsDlg=1";
 
         if (listName !== "School")
             url += "&ParentID=" + parentId;
